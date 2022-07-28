@@ -312,7 +312,8 @@ class _MainPageState extends State<MainPage> {
           title: Text('ประวัติการเล่น'),
           content: Center(
               child: Text(
-                '----------------'+Matrix1[i].toString().replaceAll('[', '\n').replaceAll(']', ' ')+'\n\n----------------'
+                '---------------------'+Matrix1[i].toString().replaceAll('[', '\n').replaceAll(']', ' ').replaceAll(' ', '      ')+'\n\n---------------------'
+                ,style: TextStyle(fontSize: 20),
               ),
           ),
           actions: [
